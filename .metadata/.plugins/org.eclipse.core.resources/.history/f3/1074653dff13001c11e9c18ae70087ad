@@ -1,0 +1,5 @@
+package br.com.itProdigium.dao.impl;
+
+public class ViagemDaoImpl extends GenericDaoImpl<Viagem, Integer> implements ViagemDao{
+
+}

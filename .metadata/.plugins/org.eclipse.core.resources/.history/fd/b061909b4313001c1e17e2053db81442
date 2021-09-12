@@ -1,0 +1,12 @@
+package br.com.itProdigium.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "T_PDG_COORDENADAS")
+@SequenceGenerator(name = "coord", sequenceName = "SQ_T_PDG_COORDENADAS", allocationSize = 1, initialValue = 1)
+public class Coordenadas {
+
+}

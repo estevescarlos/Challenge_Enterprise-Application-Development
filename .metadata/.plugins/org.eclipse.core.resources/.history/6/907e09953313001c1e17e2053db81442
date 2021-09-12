@@ -1,0 +1,10 @@
+package br.com.itProdigium.entity;
+
+public class User {
+	
+	private int id;
+	private Strirg name;
+	private String email;
+	private String tel;
+	private String password;
+}

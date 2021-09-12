@@ -1,0 +1,8 @@
+package br.com.itProdigium.singleton;
+
+public class EntityManagerFactorySingleton {
+
+	private static EntityManagerFactory fabrica;
+	
+	private EntityManagerFactorySingleton() {
+}

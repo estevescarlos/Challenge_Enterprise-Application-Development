@@ -1,0 +1,26 @@
+package br.com.itProdigium.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "T_PDG_COORDENADAS")
+@SequenceGenerator(name = "coord", sequenceName = "SQ_T_PDG_COORDENADAS", allocationSize = 1, initialValue = 1)
+public class Coordenadas {
+
+	@Id
+	@GeneratedValue(generator = "coord", strategy = GenerationType.SEQUENCE)
+	@Column(name = "id_local")
+	private int id;
+	
+	@Column(name = "ds_latitude", nullable = false, length = 100)
+	private String latitude;
+	
+	@Column(name = "ds_longitude", nullable = false, length = 100)
+	private String longitude;
+}

@@ -1,0 +1,5 @@
+package br.com.itProdigium.dao;
+
+public interface Coordenadas extends GenericDao<CoordenadasDao, Integer>{
+
+}

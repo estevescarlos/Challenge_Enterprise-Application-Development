@@ -1,0 +1,15 @@
+package br.com.itProdigium.exception;
+
+public class CommitException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+
+
+	public CommitException() {
+		super("Não foi possível realizar o commit");
+	}
+	
+	public CommitException(String message) {
+		super(message);
+	}
+}

@@ -1,0 +1,21 @@
+package br.com.itProdigium.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+
+import javax.persistence.EntityManager;
+
+import br.com.itProdigium.dao.GenericDao;
+
+public abstract class GenericDaoImpl<E, K> implements GenericDao<E, K> {
+	
+	private EntityManager em;
+	
+	private Class<E> classe;
+	
+	@SupressWarnings("all")
+	public GenericDaoImpl(EntityManager em) {
+		this.em = em;
+		this.classe = (Class<E>)((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+	}
+
+}

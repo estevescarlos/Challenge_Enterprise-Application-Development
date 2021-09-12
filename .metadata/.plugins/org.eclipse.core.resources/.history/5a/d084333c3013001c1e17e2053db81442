@@ -1,0 +1,14 @@
+package br.com.itProdigium.dao;
+
+public interface GenericDao<E, K> {
+	
+	void create (E entidade);
+	
+	E search(K id) throws EntityNotFoundException;
+	
+	void update (E entidade);
+	
+	void delete(K id) throws EntityNotFoundException;
+	
+	void commit() throws CommitException;
+}

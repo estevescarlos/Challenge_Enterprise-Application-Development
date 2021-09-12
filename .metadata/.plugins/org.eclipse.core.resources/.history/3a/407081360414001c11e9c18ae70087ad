@@ -1,0 +1,24 @@
+package br.com.itProdigium.view;
+
+import javax.persistence.EntityManager;
+
+import br.com.itProdigium.singleton.EntityManagerFactorySingleton;
+import br.com.itProdigium.dao.UsuarioDao;
+import br.com.itProdigium.dao.impl.UsuarioDaoImpl;
+import br.com.itProdigium.entity.Coordenadas;
+import br.com.itProdigium.entity.Usuario;
+
+public class Teste {
+	public static void main(String[] args) {
+		EntityManager em = EntityManagerFactorySingleton.getInstance().createEntityManager();
+		
+		UsuarioDao dao = new UsuarioDaoImpl(em);
+		CoordenadasDao dao = new CoordenadasDaoImpl(em);
+		
+		Usuario user = new Usuario("Eu", "Eu@gmail.com", "119886406", "senhaB0a");
+		Usuario user2 = new Usuario("Tu", "Tu@gmail.com", "119886406", "senhaB0a");
+		Usuario user3 = new Usuario("ELe", "Ele@gmail.com", "119886406", "senhaB0a");
+		
+		Coordenadas coord = new Coordenadas();
+	}
+}

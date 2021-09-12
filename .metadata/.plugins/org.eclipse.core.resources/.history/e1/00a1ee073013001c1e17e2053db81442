@@ -1,0 +1,5 @@
+package br.com.itProdigium.exception;
+
+public class EntityNotFoundException extends Exception {
+
+}

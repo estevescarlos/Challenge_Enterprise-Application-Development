@@ -1,0 +1,14 @@
+package br.com.itProdigium.view;
+
+import javax.persistence.EntityManager;
+
+import br.com.itProdigium.singleton.EntityManagerFactorySingleton;
+import br.com.itProdigium.dao.*;
+
+public class Teste {
+	public static void main(String[] args) {
+		EntityManager em = EntityManagerFactorySingleton.getInstance().createEntityManager();
+		
+		Usuariodao = new UsuarioDaoImpl(em);
+	}
+}

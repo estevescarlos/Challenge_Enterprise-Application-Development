@@ -1,0 +1,9 @@
+package br.com.itProdigium.view;
+
+import javax.persistence.EntityManager;
+
+public class Teste {
+	public static void main(String[] args) {
+		EntityManager em = EntityManagerFactorySingleton.getInstance().createEntityManager();
+	}
+}

@@ -1,0 +1,11 @@
+package br.com.itProdigium.dao.impl;
+
+import javax.persistence.EntityManager;
+
+public abstract class GenericDaoImpl<E, K> implements GenericDao<E, K> {
+	
+	private EntityManager em;
+	
+	private Class<E> classe;
+
+}

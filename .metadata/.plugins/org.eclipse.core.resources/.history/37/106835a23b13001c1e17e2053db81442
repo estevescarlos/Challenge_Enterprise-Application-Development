@@ -1,0 +1,9 @@
+package br.com.itProdigium.entity;
+
+public class Viagem {
+
+	private int id;
+	private Usuario user;
+	private String peso;
+	private List<Coordenadas> coordenadas;
+}

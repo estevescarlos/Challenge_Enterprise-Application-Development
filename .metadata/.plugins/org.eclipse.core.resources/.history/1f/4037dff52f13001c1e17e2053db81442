@@ -1,0 +1,5 @@
+package br.com.itProdigium.dao;
+
+public interface GenericDao<E, K> {
+	void create (E entidade);
+}

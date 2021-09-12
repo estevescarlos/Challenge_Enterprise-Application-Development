@@ -1,0 +1,13 @@
+package br.com.itProdigium.entity;
+
+import java.util.List;
+
+@Entity
+@Table(name = "")
+public class Viagem {
+
+	private int id;
+	private Usuario user;
+	private String peso;
+	private List<Coordenadas> coordenadas;
+}

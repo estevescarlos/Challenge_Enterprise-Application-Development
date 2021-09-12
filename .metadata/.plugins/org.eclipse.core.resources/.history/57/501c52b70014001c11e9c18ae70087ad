@@ -1,0 +1,5 @@
+package br.com.itProdigium.dao.impl;
+
+public class CoordenadasDaoImpl extends GenericDaoImpl<Coordenadas, Integer> implements CoordenadasDao {
+
+}
